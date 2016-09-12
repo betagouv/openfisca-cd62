@@ -17,3 +17,14 @@ class mon_aide(Variable):
 
         return period, nombre_enfants * montant_par_enfant
 
+class aide_62(Variable):
+    column = BoolCol
+    entity_class = Familles
+    label = u"Prestation locale attribuée aux familles avec enfants"
+
+    def function(self, simulation, period):
+        period = period.this_month
+        nombre_enfants = simulation.calculate('af_nbenf', period)
+
+        return period, nombre_enfants > 0
+
