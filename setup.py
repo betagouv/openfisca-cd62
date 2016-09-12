@@ -2,11 +2,11 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Openfisca-MA_COLLECTIVITE",
+    name="Openfisca-CD62",
     version="1.0.0",
-    description="Plugin OpenFisca pour les aides sociales de ma collectivité",
+    description="Plugin OpenFisca pour les aides sociales du Pas de Calais",
     license="http://www.fsf.org/licensing/licenses/agpl-3.0.html",
-    author="Ma collectivité, Incubateur de Services Numériques (SGMAP)",
+    author="Conseil Départemental du Pas de Calais, Incubateur de Services Numériques (SGMAP)",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[],
